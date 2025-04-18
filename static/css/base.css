@@ -1,0 +1,17 @@
+:root {
+    --main-bg-color: #2F323A; /* Defining a CSS variable for background color */
+    --contrast-bg-color: #1a1d23;
+    --main-text-color: #ffffff; /* Defining a CSS variable for text color */
+    --secondary-bg-color: #3a3a45;
+    --primary-button-color: #0081A7;
+    --primary-button-color-hover: rgba(127, 192, 211, 0.51);
+    --primary-button-color-hover-border: #0094bd;
+    --positive-button-color: #37a63b;
+    --positive-button-color-hover: #97ed9a;
+    --negative-button-color: #a63737;
+    --negative-button-color-hover: #ed9797;
+    --border-color: #B8C4BB;
+    --secondary-color: #E8F7EE;
+    --secondary-color-hover: rgba(162, 172, 166, 0.45);
+    --secondary-color-hover-border: rgb(198, 198, 198);
+}
