@@ -6,6 +6,7 @@
     <title>Northeastern Climbing Club</title>
     <link rel="stylesheet" href="static/css/base.css"/>
     <link rel="stylesheet" href="static/css/homeBannerAnimation.css"/>
+    <link rel="stylesheet" href="static/css/utility.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet">
@@ -21,29 +22,94 @@
             </div>
         </div>
     </div>
-    <div class="navButtonSpace">
+    <div class="navButtonSpace" id="fullNavBar">
+        <div class="divider"></div>
         <div class="navBarItem">
             <button class="navButton">Join NRC</button>
         </div>
+        <div class="divider"></div>
         <div class="navBarItem">
             <button class="navButton">Meetings</button>
         </div>
+        <div class="divider"></div>
         <div class="navBarItem">
             <button class="navButton">Events</button>
         </div>
+        <div class="divider"></div>
         <div class="navBarItem">
             <button class="navButton">Useful Links</button>
         </div>
+        <div class="divider"></div>
         <div class="navBarItem">
             <button class="navButton">Gear Rental</button>
         </div>
+        <div class="divider"></div>
         <div class="navBarItem">
             <button class="navButton">Climbing Map</button>
         </div>
+        <div class="divider"></div>
         <div class="navBarItem">
             <button class="navButton">Blog</button>
         </div>
+        <div class="divider"></div>
+        <div class="navBarItem">
+            <button class="navButton">Competitive Team</button>
+        </div>
+        <div class="divider"></div>
     </div>
+    <div class="navButtonSpace" id="reducedNavBar">
+        <div class="divider"></div>
+        <div class="navBarItem">
+            <button class="navButton">Join NRC</button>
+        </div>
+        <div class="divider"></div>
+        <div class="navBarItem">
+            <button class="navButton">Meetings</button>
+        </div>
+        <div class="divider"></div>
+        <div class="navBarItem">
+            <button class="navButton" id="navListOpen">More</button>
+        </div>
+        <div class="divider"></div>
+    </div>
+
+</div>
+<div class="navBarList" id="navBarList">
+        <div class="navBarListItem">
+            <button class="navButton">Join NRC</button>
+        </div>
+        <div class="horizontalDivider"></div>
+        <div class="navBarListItem">
+            <button class="navButton">Meetings</button>
+        </div>
+        <div class="horizontalDivider"></div>
+        <div class="navBarListItem">
+            <button class="navButton">Events</button>
+        </div>
+        <div class="horizontalDivider"></div>
+        <div class="navBarListItem">
+            <button class="navButton">Useful Links</button>
+        </div>
+        <div class="horizontalDivider"></div>
+        <div class="navBarListItem">
+            <button class="navButton">Gear Rental</button>
+        </div>
+        <div class="horizontalDivider"></div>
+        <div class="navBarListItem">
+            <button class="navButton">Climbing Map</button>
+        </div>
+        <div class="horizontalDivider"></div>
+        <div class="navBarListItem">
+            <button class="navButton">Blog</button>
+        </div>
+        <div class="horizontalDivider"></div>
+        <div class="navBarListItem">
+            <button class="navButton">Competitive Team</button>
+        </div>
+     <div class="horizontalDivider"></div>
+        <div class="navBarListItem">
+            <button class="navButton" id="navListClose">Close</button>
+        </div>
 
 </div>
 <div class="contentMain">
@@ -64,7 +130,7 @@
         </div>
         <div class="homeBannerContents">
             <div class="homeBannerText">
-                <h1 id="titleText"></h1>
+                <h1 id="titleText">Northeastern Recreational Climbing Club</h1>
             </div>
             <button class="homeJoinButton">JOIN NRC NOW</button>
         </div>
@@ -147,6 +213,7 @@
 
 <footer>
     <script src="static/js/home/typingEffect.js"></script>
+    <script src="static/js/home/navResize.js"></script>
     <div class="footer">
         <p>&copy; 2025 Northeastern Recreational Climbing Club. All rights reserved.</p>
         <div class="divider"></div>
