@@ -3,7 +3,7 @@
  * list navbar mode.
  */
 
-let breakWidth = 800;
+let breakWidth = 1000;
 // Reference to nav bar.
 let fullNav = document.getElementById("fullNavBar");
 // Reduced nav bar for smaller width screens.
