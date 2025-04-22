@@ -1,0 +1,13 @@
+.footer {
+    width: 100%;
+    background: var(--content-box-color);
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer p {
+    text-align: center;
+}

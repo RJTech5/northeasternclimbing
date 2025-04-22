@@ -54,9 +54,11 @@ function formatNavBar() {
 // Opens list nav bar.
 function openNavList() {
     navBarList.classList.remove("hidden");
+    navBarList.style = "";
 }
 
 // Closes list nav bar.
 function closeNavList() {
     navBarList.classList.add("hidden");
+    navBarList.style = "";
 }

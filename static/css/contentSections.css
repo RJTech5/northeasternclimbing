@@ -1,0 +1,131 @@
+.contentSection {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: var(--content-section-bg);
+    border: none;
+    border-top: var(--content-section-border);
+    border-top-width: 20px;
+}
+
+.contentBox {
+    width: 80%;
+    height: auto;
+    padding: 30px;
+    background: var(--content-box-color);
+    border-radius: 20px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4);
+    font-size: 1.5em;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+    overflow: hidden;
+    background: var(--content-section-bg);
+    margin: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.cell {
+  flex: 1;
+  padding: 20px;
+  height: 300px;
+}
+
+.cellimg {
+  flex: 1;
+  height: 300px;
+    width: 100%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
+    .cell {
+        flex: 1;
+        padding: 20px;
+        height: 400px;
+    }
+
+    .cellimg {
+        flex: 1;
+        height: 400px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.cellimg img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.homeBanner {
+    z-index: 0;
+    width: 100%;
+    height: 700px;
+    position: relative;
+    margin-left: auto;
+}
+
+.homeBannerImgContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.homeBannerContents {
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeBannerText {
+    margin-top: 10%;
+    width: 100%;
+    height: auto;
+    color: var(--text-color-title);
+    background: var(--home-banner-bg);
+    text-align: center;
+    padding: 1rem;
+    font-size: 2em;
+    font-family: "Noto Serif", serif;
+}
+
+.homeJoinButton {
+    margin-top: 10%;
+    width: 40%;
+    height: 100px;
+    border: none;
+    border-radius: 30px;
+    background: var(--nrc-red);
+    color: var(--text-color-title);
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4);
+}
+
+.homeJoinButton:hover {
+    background: var(--text-color-title);
+    color: black;
+}

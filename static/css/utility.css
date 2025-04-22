@@ -1,3 +1,16 @@
 .hidden {
   display: none !important;
 }
+
+.divider {
+    height: 60%;
+    width: 2px;
+    background: var(--content-section-bg);
+    border-radius: 1px;
+}
+.horizontalDivider {
+    height: 2px;
+    width: 60%;
+    background: var(--content-section-bg);
+    border-radius: 1px;
+}
