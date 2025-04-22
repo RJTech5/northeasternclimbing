@@ -1,0 +1,43 @@
+.rowSignup {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.colMemberText {
+    width: 50%;
+    padding: 10px;
+}
+
+.colMemberImage {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1000px) {
+    .rowSignup {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .colMemberText {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .colMemberImage {
+        width: 100%;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .homeJoinButton {
+        font-size: 1.5em;
+    }
+}
