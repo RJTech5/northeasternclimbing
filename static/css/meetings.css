@@ -1,0 +1,22 @@
+.rowGym {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 10px;
+}
+
+.colGym {
+    flex: 1;
+    width: 50%;
+}
+
+@media (max-width: 1000px) {
+    .rowGym {
+        flex-direction: column;
+    }
+
+    .colGym {
+        flex: 1;
+        width: 80%;
+    }
+}

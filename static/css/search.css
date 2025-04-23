@@ -1,0 +1,26 @@
+.searchBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+    background: var(--nav-bar-back);
+    padding: 10px;
+    border-radius: 6px;
+    gap: 1vw;
+}
+
+.searchIcon {
+    padding: 1vw;
+    width: 6vh;
+    height: 6vh;
+    background: var(--nrc-red);
+}
+
+.searchInput {
+    width: 50vw;
+    height: 6vh;
+    font-size: 2em;
+    color: var(--text-color-primary);
+    background: var(--content-section-bg);
+    border: none;
+}
