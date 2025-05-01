@@ -1,25 +1,27 @@
-let manifestPath = '/blog/blog-manifest.json';
-let blogData = await loadData(manifestPath);
-let blogCardSpace = document.getElementById("blogCardSpace");
+document.addEventListener("DOMContentLoaded", async () => {
+    let manifestPath = '/blog/blog-manifest.json';
+    let blogData = await loadData(manifestPath);
+    let blogCardSpace = document.getElementById("blogCardSpace");
 
-console.log(blogData);
+    console.log(blogData);
 
-if (blogData["articles"] != null) {
-    articles = blogData["articles"];
+    if (blogData["articles"] != null) {
+        articles = blogData["articles"];
 
-    for (article of articles) {
-        card = makeHTMLCard(
-            article["title"],
-            article["description"],
-            article["thumbnail"],
-            article["thumbnail-alt-text"],
-            article["date"],
-            article["time"]
+        for (article of articles) {
+            card = makeHTMLCard(
+                article["title"],
+                article["description"],
+                article["thumbnail"],
+                article["thumbnail-alt-text"],
+                article["date"],
+                article["time"]
             )
 
-        blogCardSpace.insertAdjacentHTML("beforeend", card);
+            blogCardSpace.insertAdjacentHTML("beforeend", card);
+        }
     }
-}
+});
 
 /**
  * Loads data from path to populate blog page.
