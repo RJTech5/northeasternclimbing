@@ -1,7 +1,7 @@
 
 // TODO: add pages when more blogs are made.
 document.addEventListener("DOMContentLoaded", async () => {
-    let manifestPath = '/climbing-club-blog/climbing-club-blog-manifest.json';
+    let manifestPath = '/climbing-club-blog/blog-manifest.json';
     let blogData = await loadData(manifestPath);
     let blogCardSpace = document.getElementById("blogCardSpace");
 

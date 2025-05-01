@@ -10,7 +10,7 @@ def route(path):
         path = 'wip.html'
     return render_template(path + '.html')
 
-@app.route('/climbing-club-blog/climbing-club-blog-manifest.json')
+@app.route('/climbing-club-blog/blog-manifest.json')
 def blogData():
     with open('climbing-club-blog/blog-manifest.json', 'r') as f:
         return jsonify(json.load(f))
