@@ -1,0 +1,32 @@
+.blogCard {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 30vh;
+    padding: 10px;
+    border: var(--nrc-red);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    transition-duration: 1s;
+}
+
+.blogThumbnail {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    padding-right: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogCardText {
+    width: 70%;
+    justify-content: left;
+}
+
+.blogCard:hover {
+    background: var(--content-section-bg);
+    transition-duration: 1s;
+    width: 95%;
+}

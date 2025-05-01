@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Northeastern Climbing Club</title>
+    <link rel="stylesheet" href="static/css/base.css"/>
+    <link rel="stylesheet" href="static/css/utility.css"/>
+    <link rel="stylesheet" href="static/css/contentSections.css"/>
+    <link rel="stylesheet" href="static/css/footer.css"/>
+    <link rel="stylesheet" href="static/css/navBar.css"/>
+    <link rel="stylesheet" href="static/css/titleSections.css"/>
+    <link rel="stylesheet" href="static/css/homeBannerAnimation.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+<div class="navBar">
+    <div class="navLogoSpace">
+        <div class="navLogo">
+            <a href="/">
+                <div class="navLogoContainer">
+                    <img src="static/images/logo.png" style="width: 100%; object-fit: cover;">
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="navButtonSpace" id="fullNavBar">
+        <div class="divider"></div>
+        <div class="navBarItem">
+            <button class="navButton" onclick="location.href='signup'">Join NRC</button>
+        </div>
+        <div class="divider"></div>
+        <div class="navBarItem">
+            <button class="navButton">Meetings</button>
+        </div>
+        <div class="divider"></div>
+        <div class="navBarItem">
+            <button class="navButton">Events</button>
+        </div>
+        <div class="divider"></div>
+        <div class="navBarItem">
+            <button class="navButton">Useful Links</button>
+        </div>
+        <div class="divider"></div>
+        <div class="navBarItem">
+            <button class="navButton">Gear Rental</button>
+        </div>
+        <div class="divider"></div>
+        <div class="navBarItem">
+            <button class="navButton">Climbing Map</button>
+        </div>
+        <div class="divider"></div>
+        <div class="navBarItem">
+            <button class="navButton">Blog</button>
+        </div>
+        <div class="divider"></div>
+        <div class="navBarItem">
+            <button class="navButton">Competitive Team</button>
+        </div>
+        <div class="divider"></div>
+    </div>
+    <div class="navButtonSpace" id="reducedNavBar">
+        <div class="divider"></div>
+        <div class="navBarItem" style="width: 200px;">
+            <button class="navButton" style="font-size: 2em;">Join NRC</button>
+        </div>
+        <div class="divider"></div>
+        <div class="navBarItem" style="width: 200px;">
+            <button class="navButton" style="font-size: 2em;">Meetings</button>
+        </div>
+        <div class="divider"></div>
+        <div class="navBarItem" style="width: 200px;">
+            <button class="navButton" id="navListOpen" style="font-size: 2em;">More</button>
+        </div>
+        <div class="divider"></div>
+    </div>
+
+</div>
+<div class="navBarList" id="navBarList" style="display: none">
+    <div class="navBarListItem">
+        <button class="navButton" style="font-size: 2em;">Join NRC</button>
+    </div>
+    <div class="horizontalDivider"></div>
+    <div class="navBarListItem">
+        <button class="navButton" style="font-size: 2em;">Meetings</button>
+    </div>
+    <div class="horizontalDivider"></div>
+    <div class="navBarListItem">
+        <button class="navButton" style="font-size: 2em;">Events</button>
+    </div>
+    <div class="horizontalDivider"></div>
+    <div class="navBarListItem">
+        <button class="navButton" style="font-size: 2em;">Useful Links</button>
+    </div>
+    <div class="horizontalDivider"></div>
+    <div class="navBarListItem">
+        <button class="navButton" style="font-size: 2em;">Gear Rental</button>
+    </div>
+    <div class="horizontalDivider"></div>
+    <div class="navBarListItem">
+        <button class="navButton" style="font-size: 2em;">Climbing Map</button>
+    </div>
+    <div class="horizontalDivider"></div>
+    <div class="navBarListItem">
+        <button class="navButton" style="font-size: 2em;">Blog</button>
+    </div>
+    <div class="horizontalDivider"></div>
+    <div class="navBarListItem">
+        <button class="navButton" style="font-size: 2em;">Competitive Team</button>
+    </div>
+    <div class="horizontalDivider"></div>
+    <div class="navBarListItem">
+        <button class="navButton" id="navListClose" style="font-size: 2em;">Close</button>
+    </div>
+</div>
+
+<div class="contentMain">
+    <div class="homeBanner">
+        <div class="homeBannerImgContainer">
+            <img src="static/images/gear3.jpg"
+                 style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+        </div>
+        <div class="homeBannerContents">
+            <div class="homeBannerText">
+                <h1>NRC Climbing Gear Rental</h1>
+            </div>
+            <button class="homeJoinButton" onclick="location.href='#rentgear'">RENT GEAR NOW</button>
+        </div>
+    </div>
+
+    <div class="contentSection">
+        <div class="contentBox">
+            <H2 style="font-family: 'Roboto', sans-serif;">Gear Rental Availability</H2>
+
+            <iframe src="https://calendar.google.com/calendar/embed?src=53b99e55948a0d3748288a45ecae6006bdc6824f4d32368182e41aea543253ae%40group.calendar.google.com&ctz=America%2FNew_York"
+                    style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </div>
+
+    <div class="contentSection">
+        <div class="contentBox" id="rentgear">
+            <H2 style="font-family: 'Roboto', sans-serif;">NRC Climbing Gear Rental Form</H2>
+
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdHq9uLmrtM2oEJInpd5leDdWWqhV15xgk6NiNf3iEXzuCBIg/viewform?embedded=true"
+                    style="width: 100%; height: 2780px;" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<footer>
+    <script src="static/js/home/typingEffect.js"></script>
+    <script src="static/js/home/navResize.js"></script>
+    <script src="static/js/iframeResize.js"></script>
+    <div class="footer">
+        <p>&copy; 2025 Northeastern's Recreational Climbing Club. All rights reserved.</p>
+        <div class="divider"></div>
+        <p>nurecclimbing@gmail.com</p>
+    </div>
+</footer>
+</html>

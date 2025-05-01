@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Northeastern Climbing Club</title>
+    <link rel="stylesheet" href="static/css/base.css"/>
+    <link rel="stylesheet" href="static/css/utility.css"/>
+    <link rel="stylesheet" href="static/css/contentSections.css"/>
+    <link rel="stylesheet" href="static/css/footer.css"/>
+    <link rel="stylesheet" href="static/css/navBar.css"/>
+    <link rel="stylesheet" href="static/css/titleSections.css"/>
+    <link rel="stylesheet" href="static/css/homeBannerAnimation.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+<div class="navBar">
+    <div class="navLogoSpace">
+        <div class="navLogo">
+            <a href="/">
+                <div class="navLogoContainer">
+                    <img src="static/images/logo.png" style="width: 100%; object-fit: cover;">
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="navButtonSpace" id="fullNavBar">
+        <div class="divider"></div>
+        <div class="navBarItem">
+            <button class="navButton" onclick="location.href='signup'">Join NRC</button>
+        </div>
+        <div class="divider"></div>
+        <div class="navBarItem">
+            <button class="navButton">Meetings</button>
+        </div>
+        <div class="divider"></div>
+        <div class="navBarItem">
+            <button class="navButton">Events</button>
+        </div>
+        <div class="divider"></div>
+        <div class="navBarItem">
+            <button class="navButton">Useful Links</button>
+        </div>
+        <div class="divider"></div>
+        <div class="navBarItem">
+            <button class="navButton">Gear Rental</button>
+        </div>
+        <div class="divider"></div>
+        <div class="navBarItem">
+            <button class="navButton">Climbing Map</button>
+        </div>
+        <div class="divider"></div>
+        <div class="navBarItem">
+            <button class="navButton">Blog</button>
+        </div>
+        <div class="divider"></div>
+        <div class="navBarItem">
+            <button class="navButton">Competitive Team</button>
+        </div>
+        <div class="divider"></div>
+    </div>
+    <div class="navButtonSpace" id="reducedNavBar">
+        <div class="divider"></div>
+        <div class="navBarItem" style="width: 200px;">
+            <button class="navButton" style="font-size: 2em;">Join NRC</button>
+        </div>
+        <div class="divider"></div>
+        <div class="navBarItem" style="width: 200px;">
+            <button class="navButton" style="font-size: 2em;">Meetings</button>
+        </div>
+        <div class="divider"></div>
+        <div class="navBarItem" style="width: 200px;">
+            <button class="navButton" id="navListOpen" style="font-size: 2em;">More</button>
+        </div>
+        <div class="divider"></div>
+    </div>
+
+</div>
+<div class="navBarList" id="navBarList" style="display: none">
+    <div class="navBarListItem">
+        <button class="navButton" style="font-size: 2em;">Join NRC</button>
+    </div>
+    <div class="horizontalDivider"></div>
+    <div class="navBarListItem">
+        <button class="navButton" style="font-size: 2em;">Meetings</button>
+    </div>
+    <div class="horizontalDivider"></div>
+    <div class="navBarListItem">
+        <button class="navButton" style="font-size: 2em;">Events</button>
+    </div>
+    <div class="horizontalDivider"></div>
+    <div class="navBarListItem">
+        <button class="navButton" style="font-size: 2em;">Useful Links</button>
+    </div>
+    <div class="horizontalDivider"></div>
+    <div class="navBarListItem">
+        <button class="navButton" style="font-size: 2em;">Gear Rental</button>
+    </div>
+    <div class="horizontalDivider"></div>
+    <div class="navBarListItem">
+        <button class="navButton" style="font-size: 2em;">Climbing Map</button>
+    </div>
+    <div class="horizontalDivider"></div>
+    <div class="navBarListItem">
+        <button class="navButton" style="font-size: 2em;">Blog</button>
+    </div>
+    <div class="horizontalDivider"></div>
+    <div class="navBarListItem">
+        <button class="navButton" style="font-size: 2em;">Competitive Team</button>
+    </div>
+    <div class="horizontalDivider"></div>
+    <div class="navBarListItem">
+        <button class="navButton" id="navListClose" style="font-size: 2em;">Close</button>
+    </div>
+</div>
+
+<div class="contentMain">
+
+
+    <div class="contentSection">
+        <div class="contentBox" style="text-align: center;">
+          <h1>NRC Climbing Map</h1>
+            <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1bp_1JpovvUfukttwUG-IAgDK5O_9ww8&ehbc=2E312F" style="width: 100%; height: 80vh;"></iframe>
+        </div>
+    </div>
+</div>
+
+<div class="contentSection" id="signup">
+        <div class="contentBox" style="text-align: center;">
+            <H2 style="font-family: 'Roboto', sans-serif;">Climbing Resources</H2>
+            <div class="table" style="text-align: left;">
+                <div class="row">
+                    <div class="cellimg">
+                        <img src="https://m.media-amazon.com/images/I/616wESYQrxL._AC_UF350,350_QL50_.jpg"
+                        style="max-height: 70vh;">
+                    </div>
+                    <div class="cell">
+                        <H2 style="font-family: 'Roboto', sans-serif;">
+                            Boston Rocks - Guide Book
+                        </H2>
+                        <p>
+                          <a href="https://www.amazon.com/Mit-Outing-Club-Boston-Rocks/dp/0960169814">
+                            Check out the boston rocks guide book</a>, which includes hundreds of
+                          climbs in the boston.
+                          area.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cell">
+                        <H2 style="font-family: 'Roboto', sans-serif;">
+                            Mountain Project
+                        </H2>
+                        <p>
+                          <a href="https://www.mountainproject.com/area/118978397/eastern-ma">Checkout mountain project</a> which is an easy to use and free tool to find
+                          climbing areas.
+                        </p>
+                    </div>
+                    <div class="cellimg">
+                        <img src="https://cdn.climbing.com/wp-content/uploads/2020/05/mphp.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<footer>
+    <script src="static/js/home/typingEffect.js"></script>
+    <script src="static/js/home/navResize.js"></script>
+    <script src="static/js/home/countAnimation.js"></script>
+    <div class="footer">
+        <p>&copy; 2025 Northeastern's Recreational Climbing Club. All rights reserved.</p>
+        <div class="divider"></div>
+        <p>nurecclimbing@gmail.com</p>
+    </div>
+</footer>
+</html>

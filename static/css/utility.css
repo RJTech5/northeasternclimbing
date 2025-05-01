@@ -24,3 +24,25 @@
 .column {
 
 }
+
+.dropDown {
+    transition-duration: 1s;
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+    font-size: 2em;
+    background: var(--content-section-bg);
+    border: var(--nrc-red);
+    border-style: solid;
+    border-width: 2px;
+    color: var(--text-color-title);
+}
+
+.dropDown:hover,
+.dropHover {
+    transition-duration: 1s;
+    border-width: 0px;
+    background: var(--text-color-title);
+    color: var(--content-section-bg);
+    padding-left: 20%;
+}
