@@ -7,7 +7,7 @@ app = Flask(__name__, template_folder='.')
 @app.route('/<path>')
 def route(path):
     if path == '':
-        path = 'wip.html'
+        path = 'index.html'
     return render_template(path + '.html')
 
 @app.route('/climbing-club-blog/blog-manifest.json')
