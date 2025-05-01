@@ -1,5 +1,5 @@
 let manifestPath = '/blog/blog-manifest.json';
-let blogData = loadData(manifestPath);
+let blogData = await loadData(manifestPath);
 let blogCardSpace = document.getElementById("blogCardSpace");
 
 console.log(blogData);
@@ -24,7 +24,7 @@ if (blogData["articles"] != null) {
 /**
  * Loads data from path to populate blog page.
  */
-function loadData(path) {
+async function loadData(path) {
     var returnedData = {}
     fetch(path)
         .then(response => {
@@ -54,7 +54,7 @@ function loadData(path) {
  * @returns {*} a string representing html.
  */
 function makeHTMLCard(title, description, thumbnail, thumbAlt, date, time) {
-    html = ```
+    html = `
             <div class="blogCard">
                 <div class="blogThumbnail">
                     <img src="${thumbnail}" alt="${thumbnailAlt}"
@@ -70,7 +70,7 @@ function makeHTMLCard(title, description, thumbnail, thumbAlt, date, time) {
 
                 </div>
             </div>
-    ```
+    `;
 
     return html;
 }
