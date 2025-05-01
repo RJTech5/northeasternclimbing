@@ -1,4 +1,4 @@
-let manifestPath = 'blog/blog-manifest.json';
+let manifestPath = '/blog/blog-manifest.json';
 let blogData = loadData(manifestPath);
 let blogCardSpace = document.getElementById("blogCardSpace");
 
