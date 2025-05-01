@@ -9,6 +9,7 @@
     border-width: 2px;
     border-radius: 5px;
     transition-duration: 1s;
+    margin-bottom: 2vh;
 }
 
 .blogThumbnail {
@@ -29,4 +30,10 @@
     background: var(--content-section-bg);
     transition-duration: 1s;
     width: 95%;
+}
+
+@media (max-width: 1000px) {
+    .blogCard {
+        height: auto;
+    }
 }

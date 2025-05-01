@@ -1,9 +1,9 @@
+
+// TODO: add pages when more blogs are made.
 document.addEventListener("DOMContentLoaded", async () => {
-    let manifestPath = '/blog/blog-manifest.json';
+    let manifestPath = '/climbing-club-blog/climbing-club-blog-manifest.json';
     let blogData = await loadData(manifestPath);
     let blogCardSpace = document.getElementById("blogCardSpace");
-
-    console.log(blogData);
 
     if (blogData["articles"] != null) {
         articles = blogData["articles"];
@@ -15,7 +15,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                 article["thumbnail"],
                 article["thumbnail-alt-text"],
                 article["date"],
-                article["time"]
+                article["time"],
+                article["link"]
             )
 
             blogCardSpace.insertAdjacentHTML("beforeend", card);
@@ -24,29 +25,27 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 /**
- * Loads data from path to populate blog page.
+ * Loads data from path to populate climbing-club-blog page.
  */
 async function loadData(path) {
-    var returnedData = {}
-    fetch(path)
+    return fetch(path)
         .then(response => {
             if (!response.ok) {
-                throw new Error('Error getting blog data');
+                throw new Error('Error getting climbing-club-blog data');
             }
             return response.json();
         })
         .then(data => {
-            returnedData = data;
+            return data;
         })
         .catch(error => {
             console.error('Error loading data:', error);
         });
 
-    return returnedData;
 }
 
 /**
- * Makes a custom blog card based on manifest.
+ * Makes a custom climbing-club-blog card based on manifest.
  * @param title to use for card.
  * @param description description to use for card.
  * @param thumbnail to display on card.
@@ -55,11 +54,11 @@ async function loadData(path) {
  * @param time time to use on card.
  * @returns {*} a string representing html.
  */
-function makeHTMLCard(title, description, thumbnail, thumbAlt, date, time) {
+function makeHTMLCard(title, description, thumbnail, thumbAlt, date, time, link) {
     html = `
-            <div class="blogCard">
+            <div class="blogCard" onclick="location.href='${link}'">
                 <div class="blogThumbnail">
-                    <img src="${thumbnail}" alt="${thumbnailAlt}"
+                    <img src="${thumbnail}" alt="${thumbAlt}"
                          style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
                 </div>
                 <div class="blogCardText">
@@ -68,12 +67,10 @@ function makeHTMLCard(title, description, thumbnail, thumbAlt, date, time) {
                         ${description}
                     </p>
                     <p style="font-size: 0.8em; color: var(--text-color-primary);">${date} | ${time}
-                        pm</p>
-
+                    </p>
                 </div>
             </div>
     `;
-
     return html;
 }
 
