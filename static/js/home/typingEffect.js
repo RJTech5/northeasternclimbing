@@ -1,5 +1,5 @@
 // Final text to display.
-let finalText = "Northeastern Recreational Climbing Club";
+let finalText = "Northeastern University's Rock Climbing Club";
 // Time delay between each character in milliseconds.
 let timeDelay = 50;
 
