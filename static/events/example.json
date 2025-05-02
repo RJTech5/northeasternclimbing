@@ -7,5 +7,5 @@
   "H1" : "Example Heading 1",
   "Description" : "example long description for a made up event",
   "banner" : "static/images/home1.jpg",
-  "thumbnail" : "static/images/member2.jpg"
+  "thumbnail" : "static/images/member2.webp"
 }

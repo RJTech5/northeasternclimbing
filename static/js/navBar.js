@@ -4,7 +4,7 @@ let NAVBAR = `
         <div class="navLogo">
             <a href="/">
                 <div class="navLogoContainer">
-                    <img src="static/images/logo.png" style="width: 100%; object-fit: cover;">
+                    <img src="static/images/logo.webp" style="width: 100%; object-fit: cover;">
                 </div>
             </a>
         </div>
