@@ -40,9 +40,7 @@ let NAVBAR = `
         </div>
         <div class="divider"></div>
         <div class="navBarItem">
-            <button class="navButton" onclick="window.open(
-  'https://northeasternclimbing.github.io/team/',
-  '_blank');">Competitive Team</button>
+            <button class="navButton" onclick="showModal()">Competitive Team</button>
         </div>
         <div class="divider"></div>
     </div>
@@ -93,9 +91,7 @@ let NAVBAR = `
     </div>
     <div class="horizontalDivider"></div>
     <div class="navBarListItem">
-        <button class="navButton" style="font-size: 2em;" onclick="window.open(
-  'https://northeasternclimbing.github.io/team/',
-  '_blank');">Competitive Team</button>
+        <button class="navButton" style="font-size: 2em;" onclick="showModal()">Competitive Team</button>
     </div>
     <div class="horizontalDivider"></div>
     <div class="navBarListItem">
