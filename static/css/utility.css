@@ -62,12 +62,30 @@
 }
 
 .modal-content {
-    width: 50%;
+    max-width: 50%;
     background-color: var(--content-section-bg);
     padding: 20px;
     border-radius: 8px;
     position: relative;
     color: var(--text-color-title);
+}
+
+.modal-content .row .column {
+        width: 50%;
+    }
+
+@media (max-width: 1000px) {
+    .modal-content {
+        max-width: 90%;
+    }
+
+    .modal-content .row {
+        flex-direction: column;
+    }
+    .modal-content .row .column {
+        width: 100%;
+    }
+
 }
 
 .close-btn {
