@@ -86,6 +86,10 @@
         width: 100%;
     }
 
+    .divider {
+        width: 2vw;
+    }
+
 }
 
 .close-btn {

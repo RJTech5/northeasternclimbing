@@ -47,15 +47,15 @@ let NAVBAR = `
     <div class="navButtonSpace" id="reducedNavBar">
         <div class="divider"></div>
         <div class="navBarItem" style="width: 200px;">
-            <button class="navButton" style="font-size: 2em;" onclick="location.href='signup'">Join NRC</button>
+            <button class="navButton"  onclick="location.href='signup'">Join NRC</button>
         </div>
         <div class="divider"></div>
         <div class="navBarItem" style="width: 200px;">
-            <button class="navButton" style="font-size: 2em;" onclick="location.href='meetings'">Meetings</button>
+            <button class="navButton"  onclick="location.href='meetings'">Meetings</button>
         </div>
         <div class="divider"></div>
         <div class="navBarItem" style="width: 200px;">
-            <button class="navButton" id="navListOpen" style="font-size: 2em;">More</button>
+            <button class="navButton" id="navListOpen" >More</button>
         </div>
         <div class="divider"></div>
     </div>
@@ -63,39 +63,39 @@ let NAVBAR = `
 </div>
 <div class="navBarList" id="navBarList" style="display: none">
     <div class="navBarListItem">
-        <button class="navButton" style="font-size: 2em;" onclick="location.href='signup'">Join NRC</button>
+        <button class="navButton"  onclick="location.href='signup'">Join NRC</button>
     </div>
     <div class="horizontalDivider"></div>
     <div class="navBarListItem">
-        <button class="navButton" style="font-size: 2em;" onclick="location.href='meetings'">Meetings</button>
+        <button class="navButton"  onclick="location.href='meetings'">Meetings</button>
     </div>
     <div class="horizontalDivider"></div>
     <div class="navBarListItem">
-        <button class="navButton" style="font-size: 2em;" onclick="location.href='events'">Events</button>
+        <button class="navButton"  onclick="location.href='events'">Events</button>
     </div>
     <div class="horizontalDivider"></div>
     <div class="navBarListItem">
-        <button class="navButton" style="font-size: 2em;" onclick="location.href='useful-nrc-links'">Useful Links</button>
+        <button class="navButton"  onclick="location.href='useful-nrc-links'">Useful Links</button>
     </div>
     <div class="horizontalDivider"></div>
     <div class="navBarListItem">
-        <button class="navButton" style="font-size: 2em;" onclick="location.href='climbing-gear-rental'">Gear Rental</button>
+        <button class="navButton"  onclick="location.href='climbing-gear-rental'">Gear Rental</button>
     </div>
     <div class="horizontalDivider"></div>
     <div class="navBarListItem">
-        <button class="navButton" style="font-size: 2em;" onclick="location.href='climbing-map'">Climbing Map</button>
+        <button class="navButton"  onclick="location.href='climbing-map'">Climbing Map</button>
     </div>
     <div class="horizontalDivider"></div>
     <div class="navBarListItem">
-        <button class="navButton" style="font-size: 2em;" onclick="location.href='blogs'">Blog</button>
+        <button class="navButton"  onclick="location.href='blogs'">Blog</button>
     </div>
     <div class="horizontalDivider"></div>
     <div class="navBarListItem">
-        <button class="navButton" style="font-size: 2em;" onclick="showModal()">Competitive Team</button>
+        <button class="navButton"  onclick="showModal()">Competitive Team</button>
     </div>
     <div class="horizontalDivider"></div>
     <div class="navBarListItem">
-        <button class="navButton" id="navListClose" style="font-size: 2em;">Close</button>
+        <button class="navButton" id="navListClose" >Close</button>
     </div>
 </div>
 `;
