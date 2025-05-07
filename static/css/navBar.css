@@ -54,6 +54,7 @@
     border: none;
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
+    transition-duration: 0.5s;
 }
 .navButton:hover {
     background: var(--text-color-primary);
