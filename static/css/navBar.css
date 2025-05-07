@@ -53,7 +53,7 @@
     background: var(--nav-bar-back);
     border: none;
     font-family: 'Roboto', sans-serif;
-    font-size: 2em;
+    font-size: 1em;
 }
 .navButton:hover {
     background: var(--text-color-primary);
@@ -87,7 +87,6 @@
 @media (max-width: 1000px) {
     .navButton {
         font-size: 1.4em;
-
     }
 
     .navBar {

@@ -17,27 +17,59 @@
     align-items: center;
 }
 
+.colMemberImage img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+    .homeJoinButton {
+        font-size: 1.5em;
+    }
+}
+
 @media (max-width: 1000px) {
     .rowSignup {
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
+        padding: 8px;
     }
 
     .colMemberText {
         width: 100%;
+        height: 100%;
+        z-index: 2;
         padding: 10px;
+        margin: 8px;
+        background: var(--home-banner-bg);
+    }
+
+    .colMemberText h1 {
+        font-size: 1.5em;
+    }
+
+    .colMemberText p {
+        font-size: 0.8em;
     }
 
     .colMemberImage {
         width: 100%;
-        display: none;
+        height: 100%;
+        z-index: 1;
+        position: absolute;
         justify-content: center;
         align-items: center;
     }
 
+    .colMemberImage img {
+        width: auto;
+    }
+
     .homeJoinButton {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 }

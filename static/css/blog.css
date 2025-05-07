@@ -35,5 +35,10 @@
 @media (max-width: 1000px) {
     .blogCard {
         height: auto;
+        flex-direction: column;
+    }
+
+    .blogThumbnail {
+        width: 80%;
     }
 }

@@ -71,8 +71,21 @@
 }
 
 .modal-content .row .column {
-        width: 50%;
-    }
+    width: 50%;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.calendar {
+    width: 100%;
+    height: 80vh;
+}
 
 @media (max-width: 1000px) {
     .modal-content {
@@ -82,20 +95,18 @@
     .modal-content .row {
         flex-direction: column;
     }
+
     .modal-content .row .column {
         width: 100%;
     }
 
-    .divider {
-        width: 2vw;
+    .contentBox .row {
+        flex-direction: column;
     }
 
-}
+    .calendar {
+        width: 100%;
+        height: 40vh;
+    }
 
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 24px;
-    cursor: pointer;
 }

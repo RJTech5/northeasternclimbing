@@ -50,12 +50,6 @@
     overflow: hidden;
 }
 
-@media (max-width: 1000px) {
-    .cell, .cellimg {
-        padding: 20px;
-    }
-}
-
 .cellimg img {
     width: 100%;
     height: 100%;
@@ -65,7 +59,7 @@
 .homeBanner {
     z-index: 0;
     width: 100%;
-    height: 700px;
+    height: 80vh;
     position: relative;
     margin-left: auto;
 }
@@ -120,4 +114,36 @@
 .homeJoinButton:hover {
     background: var(--text-color-title);
     color: black;
+}
+
+@media (max-width: 1000px) {
+    .contentBox {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .cell, .cellimg {
+        padding: 20px;
+    }
+
+    .homeBannerText h1 {
+        font-size: 1em;
+    }
+
+    .homeJoinButton {
+        width: 100%;
+    }
+
+    .homeBanner {
+        height: 50vh;
+    }
+
+    .byTheNumbers .homeBanner {
+        height: 70vh;
+    }
 }
