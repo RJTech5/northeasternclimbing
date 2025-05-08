@@ -8,8 +8,8 @@ The site aims to be a lightweight, modernized version of the existing northeaste
 
 ## Project Structure
 * Pages are represented as .html files in the main directory. **index.html** is the file served at northeasternclimbing.com
-* testServer.py is available for simple local testing with multiple pages
-* Blogs are loaded dynamically from climbing-club-blog/blog-manifest.json
+* **testServer.py** is available for simple local testing with multiple pages
+* Blogs are loaded dynamically from **climbing-club-blog/blog-manifest.json**
 * Some pages with shared page elements live within .js files. For example, the navBar is handled by **static/js/navBar.js** and loaded for all pages. **All elements loaded in this manner should not be critical for SEO**
 
 ## Instructions for Future EBoard
