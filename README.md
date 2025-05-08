@@ -1,5 +1,5 @@
 # northeasternclimbing.com
-![northeastern climbing site banner](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![northeastern climbing site banner](https://github.com/RJTech5/northeasternclimbing/blob/main/static/images/banner.png?raw=true)
 The official website for Northeastern University's recreational climbing club. 
 
 [Live Site](https://northeasternclimbing.com/).
