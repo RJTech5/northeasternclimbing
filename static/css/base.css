@@ -42,6 +42,21 @@ body a {
     color: var(--nrc-red);
 }
 
+.alertBanner {
+    width: 100vw;
+    height: 8vh;
+    background: var(--nrc-red);
+    text: black;
+    margin: auto;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.alertBannerText {
+    text-align: center;
+}
+
+
 
 
 

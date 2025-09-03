@@ -1,4 +1,9 @@
 let NAVBAR = `
+<div class="alertBanner">
+        <div class="alertBannerText">
+            <H2>NRC Intro Meeting, Monday Sept 8th, 6PM, 300 Richards Hall</H2>
+        </div>
+    </div>
 <div class="navBar">
     <div class="navLogoSpace">
         <div class="navLogo">
