@@ -16,6 +16,10 @@ let NAVBAR = `
         </div>
         <div class="divider"></div>
         <div class="navBarItem">
+            <button class="navButton" onclick="location.href='membership'">Membership Status</button>
+        </div>
+        <div class="divider"></div>
+        <div class="navBarItem">
             <button class="navButton" onclick="location.href='meetings'">Meetings</button>
         </div>
         <div class="divider"></div>
@@ -64,6 +68,10 @@ let NAVBAR = `
 <div class="navBarList" id="navBarList" style="display: none">
     <div class="navBarListItem">
         <button class="navButton"  onclick="location.href='signup'">Join NRC</button>
+    </div>
+    <div class="horizontalDivider"></div>
+    <div class="navBarListItem">
+        <button class="navButton"  onclick="location.href='membership'">Membership Status</button>
     </div>
     <div class="horizontalDivider"></div>
     <div class="navBarListItem">

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="static/images/logo-icon.webp" type="image/png">
+    <link rel="apple-touch-icon" href="static/images/logo-icon.webp">
+
+    <title>Check your membership status | Northeastern Climbing Club</title>
+    <meta name="description" content="Check whether your Northeastern Recreational Climbing Club
+     membership is active, and when it expires.">
+    <meta name="og:description" content="Check whether your Northeastern Recreational Climbing Club
+     membership is active, and when it expires.">
+
+    <meta property="og:image" content="static/images/blog.webp" />
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:url" content="https://northeasternclimbing.com/membership">
+    <meta property="og:url" content="https://northeasternclimbing.com/membership" />
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="static/css/base.css"/>
+    <link rel="stylesheet" href="static/css/utility.css"/>
+    <link rel="stylesheet" href="static/css/contentSections.css"/>
+    <link rel="stylesheet" href="static/css/footer.css"/>
+    <link rel="stylesheet" href="static/css/navBar.css"/>
+    <link rel="stylesheet" href="static/css/titleSections.css"/>
+    <link rel="stylesheet" href="static/css/signup.css"/>
+    <link rel="stylesheet" href="static/css/membership.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+<main class="contentMain">
+    <div class="contentSection">
+        <div class="contentBox">
+            <div class="rowSignup">
+                <div class="colMemberText">
+                    <h1 style="font-family: 'Roboto', sans-serif;">Check Your Membership Status</h1>
+                    <p>Enter the name and email address you used on the NRC signup form to see whether
+                        your membership is active and when it expires.</p>
+
+                    <form class="membershipForm" id="membershipForm" novalidate>
+                        <div class="membershipFieldRow">
+                            <div class="membershipField">
+                                <label for="membershipFirstName">First name</label>
+                                <input type="text" id="membershipFirstName" name="first_name"
+                                       autocomplete="given-name" maxlength="100" required
+                                       aria-describedby="membershipFirstNameError">
+                                <p class="membershipFieldError" id="membershipFirstNameError"></p>
+                            </div>
+                            <div class="membershipField">
+                                <label for="membershipLastName">Last name</label>
+                                <input type="text" id="membershipLastName" name="last_name"
+                                       autocomplete="family-name" maxlength="100" required
+                                       aria-describedby="membershipLastNameError">
+                                <p class="membershipFieldError" id="membershipLastNameError"></p>
+                            </div>
+                        </div>
+                        <div class="membershipField">
+                            <label for="membershipEmail">Email address</label>
+                            <input type="email" id="membershipEmail" name="email"
+                                   autocomplete="email" inputmode="email" maxlength="254" required
+                                   aria-describedby="membershipEmailHint membershipEmailError">
+                            <p class="membershipFieldHint" id="membershipEmailHint">Use the same email as on your signup form.</p>
+                            <p class="membershipFieldError" id="membershipEmailError"></p>
+                        </div>
+                        <button type="submit" class="homeJoinButton membershipSubmit" id="membershipSubmit">CHECK STATUS</button>
+                    </form>
+
+                    <div class="membershipResult hidden" id="membershipResult">
+                        <h2 class="membershipResultTitle" id="membershipResultTitle"></h2>
+                        <p class="membershipResultMessage" id="membershipResultMessage"></p>
+                    </div>
+                    <p class="visuallyHidden" id="membershipAnnouncer" role="status" aria-live="polite"></p>
+                </div>
+                <div class="colMemberImage">
+                    <img src="static/images/check.JPG"
+                         alt="Northeastern Climbing Club members bouldering at an indoor climbing gym"
+                         style="object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contentSection">
+        <div class="contentBox">
+            <h2 style="font-family: 'Roboto', sans-serif;">Not a member yet?</h2>
+            <p>Memberships are processed within 2-3 business days of submitting the signup form.
+                Learn how to <a href="signup">sign up and become a member</a>, or email
+                <a href="mailto:nurecclimbing@gmail.com">nurecclimbing@gmail.com</a> if your status
+                doesn't look right.</p>
+        </div>
+    </div>
+</main>
+
+</body>
+
+<footer>
+    <script src="static/js/navBar.js"></script>
+    <script src="static/js/home/navResize.js"></script>
+    <script src="static/js/teamModal.js"></script>
+    <script src="static/js/config.js"></script>
+    <script src="static/js/membership/membershipLookup.js"></script>
+    <div class="footer">
+        <p>&copy; 2025 Northeastern Recreational Climbing Club. All rights reserved.</p>
+        <div class="divider"></div>
+        <p>nurecclimbing@gmail.com</p>
+    </div>
+</footer>
+</html>

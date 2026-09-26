@@ -1,0 +1,158 @@
+.membershipForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.membershipFieldRow {
+    display: flex;
+    gap: 20px;
+}
+
+.membershipFieldRow .membershipField {
+    flex: 1;
+    min-width: 0;
+}
+
+.membershipField {
+    display: flex;
+    flex-direction: column;
+}
+
+.membershipField label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+    color: var(--text-color-title);
+    margin-bottom: 6px;
+}
+
+.membershipField input {
+    font: inherit;
+    font-size: 0.8em;
+    padding: 12px;
+    color: var(--text-color-title);
+    background: var(--content-section-bg);
+    border: 2px solid var(--content-section-border);
+    border-radius: 6px;
+}
+
+.membershipField input:hover {
+    border-color: var(--text-color-primary);
+}
+
+.membershipField input:focus-visible {
+    outline: 3px solid var(--text-color-title);
+    outline-offset: 2px;
+    border-color: var(--nrc-red);
+}
+
+.membershipField input[aria-invalid="true"] {
+    border-color: var(--nrc-red);
+}
+
+.membershipForm .membershipFieldHint,
+.membershipForm .membershipFieldError {
+    margin: 6px 0 0;
+    font-size: 0.6em;
+}
+
+.membershipFieldHint {
+    color: var(--text-color-primary);
+}
+
+.membershipFieldError {
+    color: var(--text-color-title);
+}
+
+.membershipFieldError:empty {
+    display: none;
+}
+
+.membershipFieldError::before {
+    content: "➼ ";
+    color: var(--nrc-red);
+}
+
+.membershipSubmit {
+    width: 70%;
+    height: auto;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.homeJoinButton:focus-visible {
+    outline: 3px solid var(--text-color-title);
+    outline-offset: 3px;
+}
+
+.membershipSubmit:disabled,
+.membershipSubmit:disabled:hover {
+    cursor: progress;
+    background: var(--content-section-border);
+    color: var(--text-color-primary);
+}
+
+.membershipResult {
+    margin-top: 30px;
+    padding: 20px;
+    background: var(--content-section-bg);
+    border-left: 6px solid var(--content-section-border);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.membershipResult[data-status="active"] {
+    border-left-color: var(--nrc-green);
+}
+
+.membershipResult[data-status="active"] .membershipResultTitle {
+    color: var(--nrc-green);
+}
+
+.membershipResult[data-status="expired"],
+.membershipResult[data-status="not_found"],
+.membershipResult[data-status="error"] {
+    border-left-color: var(--nrc-red);
+}
+
+.membershipResultTitle {
+    margin: 0 0 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    color: var(--text-color-title);
+}
+
+.membershipResult .membershipResultMessage {
+    margin: 0;
+    font-size: 0.8em;
+    color: var(--text-color-primary);
+}
+
+.visuallyHidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+@media (max-width: 1000px) {
+    .membershipFieldRow {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .membershipSubmit {
+        width: 100%;
+    }
+
+    .membershipResult {
+        padding: 15px;
+    }
+}
