@@ -7,5 +7,5 @@
  * scripts/write-config.sh (see README.md).
  */
 const NRC_CONFIG = Object.freeze({
-    apiBaseUrl: "http://localhost:5000"
+    apiBaseUrl: "http://gosummet.com"
 });
